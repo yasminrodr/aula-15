@@ -1,0 +1,71 @@
+//Sara Rodrigues
+
+//ele da informaçoes ao console, e imprime a mensagem dizendo que se ela for maior de 18, pode dirigir
+//quando a informaçao for verdadeira sera impresso a 1° opçao, e for falsa a 2a 
+//escrita de codigo
+let idade = parseInt(prompt("Digite sua idade:"));
+if (idade >= 18) {
+    console.log("Você é maior de idade");
+} else {
+    console.log("Você é menor de idade");
+}
+idade;
+
+let turno = prompt("Digite seu turno de estudo (M, T ou N):");
+switch (turno) {
+    case "M":
+        console.log("Bom Dia!");
+        break;
+    case "T":
+        console.log("Boa Tarde!");
+        break;
+    case "N":
+        console.log("Boa Noite!");
+        break;
+    default:
+        console.log("Turno não reconhecido");
+}
+let aluno = {
+    nome: "Arthur",
+    idade: 16,
+    tipoDeCurso: "introduçao",
+    temBolsa: false
+};
+if (aluno.idade < 30 && aluno.tipoDeCurso === "introduçao" && !aluno.temBolsa) {
+    console.log("Você pode se candidatar a uma bolsa de estudos!");
+} else {
+    console.log("Desculpe, você não atende aos requisitos para a bolsa.");
+}
+turno;
+aluno;
+
+let aluno2 = {
+    nome: "marcos",
+    idade: 35,
+    tipoDeCurso: "introduçao",
+    temBolsa: false
+};
+
+if (aluno2.idade < 30 && aluno.tipoDeCurso === "introduçao" && !aluno.temBolsa) {
+    console.log("Você pode se candidatar a uma bolsa de estudos!");
+} else {
+    console.log("Desculpe, você não atende aos requisitos para a bolsa.");
+}
+aluno2;
+
+let produto = {
+    nome: "camisa high",
+    preco: 100,
+    desconto: 5,
+    freteGratis: true
+};
+if (produto.desconto && produto.freteGratis) {
+    console.log(`preço final: ${produto.preco - produto.desconto} (frete grátis)`);
+} else if (produto.desconto) {
+    console.log(`preço final: ${produto.preco - produto.desconto}`);
+} else if (produto.freteGratis) {
+    console.log(`preço final: ${produto.preco} (frete grátis)`);
+} else {
+    console.log(`preço final: ${produto.preco}`);
+}
+produto;
